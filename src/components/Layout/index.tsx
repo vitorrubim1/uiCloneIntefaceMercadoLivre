@@ -1,5 +1,7 @@
 import * as React from "react";
 
+import Header from "../Header";
+import Footer from "../Footer";
 import Product from "../Product";
 
 import { Container, Wrapper } from "./styles";
@@ -7,13 +9,13 @@ import { Container, Wrapper } from "./styles";
 const Layout: React.FC = () => {
   return (
     <Container>
-      {/* <Header /> */}
+      <Header />
 
       <Wrapper>
         <Product />
       </Wrapper>
 
-      {/* <Footer /> */}
+      <Footer />
     </Container>
   );
 };

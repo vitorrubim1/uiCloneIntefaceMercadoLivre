@@ -2,6 +2,7 @@ import * as React from "react";
 
 import tShirtImage from "../../assets/tshirt.png";
 import SellerInfo from "../SellerInfo";
+import ProductAction from "../ProductAction";
 
 import {
   Container,
@@ -21,19 +22,18 @@ const Product: React.FC = () => {
         <a href="#">Vender um igual</a>
       </Row>
 
-      <Panel>
-        {/*parte branca*/}
-        <Column>
-          {/*coluna da esquerda*/}
+      <Panel> {/*parte branca*/}
+        <Column> {/*coluna da esquerda*/}
           <Gallery>
             <img src={tShirtImage} alt="Foto de uma camiseta" />
           </Gallery>
           <Info />
         </Column>
 
-        <Column>{/*coluna da direita*/}
-          {/* <ProductAction /> */}
+        <Column> {/*coluna da direita*/}
+          <ProductAction />
           <SellerInfo /> {/*informações do vendedor*/}
+          
           {/*seção de garantia*/}
           <WarrantySection />
           <WarrantySection />
@@ -91,7 +91,9 @@ const Info = () => (
       distinctio dicta eligendi cupiditate numquam cum. Quisquam, error?
       Consequuntur placeat quos eius exceptur hic quam ipsa libero tempore
       repellendus distinctio dicta eligendi cupiditate numquam cum. Quisquam,
-      error? Consequuntur placeat quos eius excepturi!
+      error? Consequuntur placeat quos eius excepturi ipsa libero tempore
+      repellendus distinctio consectetur adipisicing elit. Error temporaipsa
+      libero tempore!
     </p>
   </Description>
 );
