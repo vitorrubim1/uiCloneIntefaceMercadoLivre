@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import Product from "../Product/index";
+import Product from "../Product";
 
 import { Container, Wrapper } from "./styles";
 

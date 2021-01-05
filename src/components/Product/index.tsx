@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import tShirtImage from "../../assets/tshirt.png";
+import SellerInfo from "../SellerInfo";
 
 import {
   Container,
@@ -23,7 +24,6 @@ const Product: React.FC = () => {
       <Panel>
         {/*parte branca*/}
         <Column>
-          {" "}
           {/*coluna da esquerda*/}
           <Gallery>
             <img src={tShirtImage} alt="Foto de uma camiseta" />
@@ -31,11 +31,9 @@ const Product: React.FC = () => {
           <Info />
         </Column>
 
-        <Column>
-          {" "}
-          {/*coluna da direita*/}
+        <Column>{/*coluna da direita*/}
           {/* <ProductAction /> */}
-          {/* <SellerInfo /> informações do vendedor */}
+          <SellerInfo /> {/*informações do vendedor*/}
           {/*seção de garantia*/}
           <WarrantySection />
           <WarrantySection />
@@ -80,9 +78,9 @@ const Info = () => (
       <br />
       <br />
       Itens inclusos: <br />
-      - Sei lá mano <br />
-      - Sei lá mano <br />
-      - Sei lá mano <br />
+      - 1x blusa <br />
+      - 2x adesivos da marca <br />
+      - 1x carta <br />
       - Sei lá mano <br />
       <br />
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora
@@ -91,9 +89,9 @@ const Info = () => (
       quos eius excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
       elit. Error tempora voluptas, hic quam ipsa libero tempore repellendus
       distinctio dicta eligendi cupiditate numquam cum. Quisquam, error?
-      Consequuntur placeat quos eius exceptur hic quam ipsa libero tempore repellendus
-      distinctio dicta eligendi cupiditate numquam cum. Quisquam, error?
-      Consequuntur placeat quos eius excepturi!
+      Consequuntur placeat quos eius exceptur hic quam ipsa libero tempore
+      repellendus distinctio dicta eligendi cupiditate numquam cum. Quisquam,
+      error? Consequuntur placeat quos eius excepturi!
     </p>
   </Description>
 );

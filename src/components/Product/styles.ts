@@ -16,7 +16,6 @@ export const Row = styled.div`
   > a {
     font-size: 14px;
     color: var(--color-blue);
-
     text-decoration: none;
 
     padding: 2.5px 0;
